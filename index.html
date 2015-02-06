@@ -1,0 +1,64 @@
+<style>
+h1 {
+margin-top: 45px;
+}
+</style>
+
+<script src="js/jquery.js"></script>
+<div id="d_quiz">
+</div>
+
+<script>
+  var index = 0;
+  var types = ['wc', 'q1', 'ctr', 'q2', 'geo', 'q3', 'dep', 'q4', 'q5'];
+  setInterval(function() {
+    var type = types[index];
+    var url = "";
+    var title = "";
+    switch(type) {
+      case 'wc':
+        title = "Brands We've Helped, In The Past Hour";
+        url = "http://10.0.10.203/hackathon/wc/wc.html#http%3A%2F%2F10.0.10.203%2Fhackathon%2Fwc%2Fwc.txt";
+        break;
+      case 'ctr':
+        title = "Which Ad Format Is Giving Us Better Performance?";
+        url = "http://10.0.10.203/hackathon/ctr/ctr.html";
+        break;
+      case 'geo':
+        title = "Where Are We Serving Our Ads To In US?";
+        url = "http://10.0.10.203/hackathon/geo/geo.html";
+        break;
+      case 'dep':
+        title = "This Is How We Manager Our Campaigns - Team Work";
+        url = "http://10.0.10.203/hackathon/dep/dep1.html";
+        break;
+      case 'q1':
+        title = "Do You Know?";
+        url = "http://10.0.10.203/hackathon/quiz/quiz.html?p=0";
+        break;
+      case 'q2':
+        title = "Do You Know?";
+        url = "http://10.0.10.203/hackathon/quiz/quiz.html?p=1";
+        break;
+      case 'q3':
+        title = "Do You Know?";
+        url = "http://10.0.10.203/hackathon/quiz/quiz.html?p=2";
+        break;
+      case 'q4':
+        title = "Do You Know?";
+        url = "http://10.0.10.203/hackathon/quiz/quiz.html?p=3";
+        break;
+      case 'q5':
+        title = "Do You Know?";
+        url = "http://10.0.10.203/hackathon/quiz/quiz.html?p=4";
+        break;
+    }
+    var d = $('#d_quiz');
+    d.empty();
+    d.append('<h1 align="center">' + title + '<h1>')
+    d.append($('<iframe id="f_' + type + '" frameBorder="0" onload="this.width=screen.width;this.height=screen.height;"></iframe>'));
+    $('#f_' + type).attr('src', url);
+    index += 1;
+    index = index % 9;
+  }, 19000);
+</script>

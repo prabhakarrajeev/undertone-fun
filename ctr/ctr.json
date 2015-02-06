@@ -1,0 +1,32 @@
+{
+	"name" : "CTR",
+	"children": [
+			{"name" : "Tablet interstitial", "size": 2688},
+			{"name" : "Smartphone interstitial", "size": 1889},
+			{"name" : "ScreenShift Full Page", "size": 1182},
+			{"name" : "PageGrabber", "size": 1011},
+			{"name" : "PageWrap Plus", "size": 802},
+			{"name" : "ScreenShift", "size": 608},
+			{"name" : "PageSkin", "size": 502},
+			{"name" : "Linear Video Ad", "size": 199},
+			{"name" : "FullPage UT", "size": 199},
+			{"name" : "Smartphone 300x250", "size": 167},
+			{"name" : "Smartphone 300x50", "size": 125},
+			{"name" : "Billboard 970x250", "size": 103},
+			{"name" : "Pushdown 970x90", "size": 95},
+			{"name" : "Tablet  728x90", "size": 88},
+			{"name" : "Tablet  300x250", "size": 66},
+			{"name" : "Tablet  160x600", "size": 50},
+			{"name" : "Half Page Ad 300x600", "size": 45},
+			{"name" : "Portrait 300x1050", "size": 39},
+			{"name" : "Smartphone 320x50", "size": 33},
+			{"name" : "Wide Skyscraper 160x600", "size": 33},
+			{"name" : "Medium Rectangle 300x250", "size": 23},
+			{"name" : "Leaderboard 728x90", "size": 16},
+			{"name" : "FullPage Pub", "size": 11},
+			{"name" : "Sidekick (300x250)", "size": 8},
+			{"name" : "Tablet 768x50", "size": 6},
+			{"name" : "Video Tracking Pixel (1x1)", "size": 0},
+			{"name" : "Companion 300x250", "size": 0}
+	]
+}
